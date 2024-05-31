@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67D5A1952C0969BD00DDB545 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D5A1942C0969BD00DDB545 /* PersonModel.swift */; };
+		67D5A1972C096A2600DDB545 /* CloudPersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D5A1962C096A2600DDB545 /* CloudPersonViewModel.swift */; };
 		67D82D512C085B96009949AC /* CloudKitIntegrationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D82D502C085B96009949AC /* CloudKitIntegrationApp.swift */; };
 		67D82D532C085B96009949AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D82D522C085B96009949AC /* ContentView.swift */; };
 		67D82D552C085B97009949AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67D82D542C085B97009949AC /* Assets.xcassets */; };
@@ -14,11 +16,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67D5A1942C0969BD00DDB545 /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
+		67D5A1962C096A2600DDB545 /* CloudPersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudPersonViewModel.swift; sourceTree = "<group>"; };
 		67D82D4D2C085B96009949AC /* CloudKitIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudKitIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D82D502C085B96009949AC /* CloudKitIntegrationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitIntegrationApp.swift; sourceTree = "<group>"; };
 		67D82D522C085B96009949AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		67D82D542C085B97009949AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67D82D572C085B97009949AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		67D82D5E2C085D4D009949AC /* CloudKitIntegration.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudKitIntegration.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +56,13 @@
 		67D82D4F2C085B96009949AC /* CloudKitIntegration */ = {
 			isa = PBXGroup;
 			children = (
+				67D82D5E2C085D4D009949AC /* CloudKitIntegration.entitlements */,
 				67D82D502C085B96009949AC /* CloudKitIntegrationApp.swift */,
 				67D82D522C085B96009949AC /* ContentView.swift */,
 				67D82D542C085B97009949AC /* Assets.xcassets */,
 				67D82D562C085B97009949AC /* Preview Content */,
+				67D5A1942C0969BD00DDB545 /* PersonModel.swift */,
+				67D5A1962C096A2600DDB545 /* CloudPersonViewModel.swift */,
 			);
 			path = CloudKitIntegration;
 			sourceTree = "<group>";
@@ -137,8 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67D5A1952C0969BD00DDB545 /* PersonModel.swift in Sources */,
 				67D82D532C085B96009949AC /* ContentView.swift in Sources */,
 				67D82D512C085B96009949AC /* CloudKitIntegrationApp.swift in Sources */,
+				67D5A1972C096A2600DDB545 /* CloudPersonViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +279,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CloudKitIntegration/CloudKitIntegration.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CloudKitIntegration/Preview Content\"";
@@ -298,6 +309,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CloudKitIntegration/CloudKitIntegration.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CloudKitIntegration/Preview Content\"";
